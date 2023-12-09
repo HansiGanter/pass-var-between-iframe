@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<h1>iframe</h1>
+<p id="p"></p>
+
+<script>
+    var x = "CHILD VAR";
+    document.getElementById("p").textContent = parent.y;
+</script>
+
+</html>
+<style>
+    html {
+        background-color: aquamarine;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>

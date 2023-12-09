@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<h1>Parent Site</h1>
+<iframe id="fram" src="http://127.0.0.1:5500/iframe.html"></iframe>
+<h1 id="h1"></h1>
+<script>
+    var y = "PARENT VAR";
+    window.onload = () => {
+        fram = document.getElementById("fram");
+        document.getElementById("h1").textContent = fram.contentWindow.x;
+    };
+</script>
+
+</html>
+<style>
+    html {
+        background-color: darksalmon;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
